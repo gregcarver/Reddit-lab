@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color:green;
+    border:5px solid green;
+    padding-bottom:25px;
+    font-size:36px;
+    background:black;
+}
+body{
+    background-image:url('https://lolstatic-a.akamaihd.net/game-info/1.1.9/images/content/whatislol-intro.jpg')
+}
+button{
+    background-color:crimson;
+    font-size:25px;
+    width:50%;
+    margin-left:25%;
+    border:3px solid black;
+   
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.post{
+    color:white;
+    size:100px;
+    width:100px;
+    margin:auto;
+}
