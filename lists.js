@@ -7,16 +7,21 @@ $(document).ready(function(){
     })
     .then(function(success){  
         console.log(success)
-        console.log((success.data.children))
-    //    var posts=JSON.parse((success.data.children))
-    //    console.log(posts)
+        var myData=success.data.children
     for(var i=0;i<10;i++){
+        var header=document.createElement('h2')
         var div=document.createElement('div')
-        var header=document.createElement('h1')
         document.body.append(header)
-        header.append(div)
-        div.innerHTML=success.data.children[i]
+        document.body.append(div)
+        div.innerText=myData[i].data.selftext
+        var appendLink=$(header)
+        var a=document.createElement('a')
+        a.text=myData[i].data.title
+      //  a.setAttribute('href',single.html?url:myData.data.permalink)
+       a.href="single.html?url:" + myData[i].data.permalink
+        appendLink.append(a)
     }
+    
 })
 })
 
@@ -37,3 +42,11 @@ Post.prototype.appear=function(){
 posts.forEach(function(element) {
     element.appear()
 });*/
+    
+      //  header.innerText=myData[i].data.title
+
+       
+            //   var image=document.createElement('IMG')
+            //    image.src=myData[i].data.url
+    //    image.id="myIMG"
+     //   div.appendChild(image)
