@@ -17,8 +17,8 @@ $(document).ready(function(){
         var appendLink=$(header)
         var a=document.createElement('a')
         a.text=myData[i].data.title
-      //  a.setAttribute('href',single.html?url:myData.data.permalink)
-       a.href="single.html?url:" + myData[i].data.permalink
+      //  a.setAttribute('href',single.html?url=+myData.data.permalink)
+       a.href="single.html?url=" + myData[i].data.permalink
         appendLink.append(a)
     }
     
